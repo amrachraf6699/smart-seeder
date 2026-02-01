@@ -1,5 +1,5 @@
 {
-  "name": "amr-achraf/laravel-smart-seeder",
+  "name": "amrachraf6699/laravel-smart-seeder",
   "description": "Interactive artisan command that makes database seeding more flexible and friendly.",
   "type": "library",
   "require": {
@@ -8,13 +8,13 @@
   },
   "autoload": {
     "psr-4": {
-      "AmrAchraf\\SmartSeeder\\": "src/"
+    "Amrachraf6699\\SmartSeeder\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "AmrAchraf\\SmartSeeder\\SmartSeederServiceProvider"
+        "Amrachraf6699\\SmartSeeder\\SmartSeederServiceProvider"
       ]
     }
   },

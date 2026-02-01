@@ -1,6 +1,6 @@
 <?php
 
-namespace AmrAchraf\SmartSeeder\Console;
+namespace Amrachraf6699\SmartSeeder\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

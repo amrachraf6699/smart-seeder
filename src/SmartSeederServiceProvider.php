@@ -1,9 +1,9 @@
 <?php
 
-namespace AmrAchraf\SmartSeeder;
+namespace Amrachraf6699\SmartSeeder;
 
 use Illuminate\Support\ServiceProvider;
-use AmrAchraf\SmartSeeder\Console\SmartSeedCommand;
+use Amrachraf6699\SmartSeeder\Console\SmartSeedCommand;
 
 class SmartSeederServiceProvider extends ServiceProvider
 {

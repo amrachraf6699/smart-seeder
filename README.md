@@ -1,4 +1,4 @@
-# Laravel Smart Seeder ![Packagist Version](https://img.shields.io/packagist/v/amr-achraf/laravel-smart-seeder.svg)
+# Laravel Smart Seeder ![Packagist Version](https://img.shields.io/packagist/v/amrachraf6699/laravel-smart-seeder.svg)
 
 Enhanced interactive seeding for Laravel projects. This package wraps the default `db:seed` experience in a friendly menu, lets you selectively run seeders, and supports shortcuts for automation.
 
@@ -13,7 +13,7 @@ Enhanced interactive seeding for Laravel projects. This package wraps the defaul
 ## Installation
 
 ```bash
-composer require amr-achraf/laravel-smart-seeder
+composer require amrachraf6699/laravel-smart-seeder
 ```
 
 Laravel detects the package automatically thanks to its auto-discovery entry in `composer.json`.
