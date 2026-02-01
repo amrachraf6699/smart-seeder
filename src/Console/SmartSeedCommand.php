@@ -42,7 +42,7 @@ class SmartSeedCommand extends Command
         $seeders = $this->discoverSeeders();
 
         if ($this->option('force')) {
-            return $this->runAllSeeders($seeders, true);
+            return $this->runAllSeeders($seeders, true, true);
         }
 
         if (empty($seeders)) {
@@ -55,7 +55,7 @@ class SmartSeedCommand extends Command
         $action = $this->promptAction();
 
         return match ($action) {
-            'all' => $this->runAllSeeders($seeders),
+            'all' => $this->runAllSeeders($seeders, false, true),
             'database' => $this->runDatabaseSeeder(),
             'picker' => $this->runSelectedSeeders($seeders),
             default => 1,
@@ -113,8 +113,20 @@ class SmartSeedCommand extends Command
         return array_values($unique);
     }
 
-    protected function runAllSeeders(array $seeders, bool $isForce = false): int
+    protected function runAllSeeders(array $seeders, bool $isForce = false, bool $skipDatabaseSeeder = false): int
     {
+        if ($skipDatabaseSeeder) {
+            $seeders = array_values(array_filter($seeders, static function (string $class): bool {
+                return $class !== 'Database\\Seeders\\DatabaseSeeder';
+            }));
+
+            if (empty($seeders)) {
+                $this->warn('Only DatabaseSeeder is registered; nothing left to run in "Run every seeder" mode.');
+
+                return 1;
+            }
+        }
+
         if (empty($seeders)) {
             $this->warn('No seeders found to run.');
 
