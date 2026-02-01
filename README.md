@@ -1,4 +1,4 @@
-# Laravel Smart Seeder [![Packagist Version](https://img.shields.io/packagist/v/amrachraf6699/laravel-smart-seeder.svg)](https://packagist.org/packages/amrachraf6699/laravel-smart-seeder)
+# Laravel Smart Seeder [![Packagist Version](https://img.shields.io/packagist/v/amrachraf6699/laravel-smart-seeder.svg)](https://packagist.org/packages/amrachraf6699/laravel-smart-seeder) [![Packagist Downloads](https://img.shields.io/packagist/dt/amrachraf6699/laravel-smart-seeder.svg)](https://packagist.org/packages/amrachraf6699/laravel-smart-seeder)
 
 Smart, conversational control over your database seeders. Instead of memorizing class names or blindly re-running `php artisan db:seed`, Smart Seeder walks you through a friendly menu where you can explore every available seeder, choose one (or more), or run everything without typing extra arguments.
 
