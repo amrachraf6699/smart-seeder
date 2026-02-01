@@ -1,4 +1,4 @@
-# Laravel Smart Seeder
+# Laravel Smart Seeder ![Packagist Version](https://img.shields.io/packagist/v/amr-achraf/laravel-smart-seeder.svg)
 
 Enhanced interactive seeding for Laravel projects. This package wraps the default `db:seed` experience in a friendly menu, lets you selectively run seeders, and supports shortcuts for automation.
 
